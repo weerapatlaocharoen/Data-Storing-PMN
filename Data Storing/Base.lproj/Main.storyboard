@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Data_Storing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphon6bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pm5-B6-Pwv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What Phone Number ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xme-ff-GCq">
+                                <rect key="frame" x="68" y="53" width="239" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Phone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7R1-Al-F7K">
+                                <rect key="frame" x="71" y="123.5" width="233" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.19462477992957747" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Phone" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VSx-4A-V0m">
+                                <rect key="frame" x="80" y="191" width="224" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6p-QO-aAh">
+                                <rect key="frame" x="129" y="240" width="116" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SaveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8B7-nJ-hTc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yis-Fu-lOn">
+                                <rect key="frame" x="129" y="284" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="Delete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AAY-9e-R78"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xme-ff-GCq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="20y-oU-19c"/>
+                            <constraint firstItem="Pm5-B6-Pwv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2Tb-Bd-iq1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VSx-4A-V0m" secondAttribute="trailing" constant="55" id="5Px-IS-g5x"/>
+                            <constraint firstAttribute="trailing" secondItem="Pm5-B6-Pwv" secondAttribute="trailing" id="5ft-Of-OZM"/>
+                            <constraint firstItem="w6p-QO-aAh" firstAttribute="top" secondItem="VSx-4A-V0m" secondAttribute="bottom" constant="19" id="74m-te-Llc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pm5-B6-Pwv" secondAttribute="bottom" id="B9c-tT-EWh"/>
+                            <constraint firstItem="VSx-4A-V0m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="DAS-RP-i9C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xme-ff-GCq" secondAttribute="trailing" constant="52" id="LZg-47-qHs"/>
+                            <constraint firstItem="VSx-4A-V0m" firstAttribute="top" secondItem="7R1-Al-F7K" secondAttribute="bottom" constant="37.5" id="T3P-gj-JgV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7R1-Al-F7K" secondAttribute="trailing" constant="55" id="Z8Y-wZ-uU2"/>
+                            <constraint firstItem="Xme-ff-GCq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="bCY-Ew-l7O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="w6p-QO-aAh" secondAttribute="trailing" constant="114" id="dDf-Sf-NtK"/>
+                            <constraint firstItem="7R1-Al-F7K" firstAttribute="top" secondItem="Xme-ff-GCq" secondAttribute="bottom" constant="44" id="dGA-bR-62w"/>
+                            <constraint firstItem="w6p-QO-aAh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="113" id="eTp-r1-n73"/>
+                            <constraint firstItem="Pm5-B6-Pwv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rpE-OV-o8Z"/>
+                            <constraint firstItem="7R1-Al-F7K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="uNE-2k-sCc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="NumberPhone" destination="7R1-Al-F7K" id="Iuj-sq-lWf"/>
+                        <outlet property="TextPhone" destination="VSx-4A-V0m" id="6Hl-8z-eUM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iphon6bg.png" width="332" height="531"/>
+    </resources>
+</document>
